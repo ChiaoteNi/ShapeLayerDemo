@@ -8,20 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		F47FDF8E20CE7313007461D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FDF8D20CE7313007461D0 /* AppDelegate.swift */; };
-		F47FDF9020CE7313007461D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FDF8F20CE7313007461D0 /* ViewController.swift */; };
+		F47FDF9020CE7313007461D0 /* SimpleDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FDF8F20CE7313007461D0 /* SimpleDemoVC.swift */; };
 		F47FDF9320CE7313007461D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47FDF9120CE7313007461D0 /* Main.storyboard */; };
 		F47FDF9520CE7313007461D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47FDF9420CE7313007461D0 /* Assets.xcassets */; };
 		F47FDF9820CE7313007461D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47FDF9620CE7313007461D0 /* LaunchScreen.storyboard */; };
+		F47FDFF720CE9793007461D0 /* Extension + UIBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FDFF620CE9793007461D0 /* Extension + UIBezierPath.swift */; };
+		F47FDFF920CE9B3D007461D0 /* MaskDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FDFF820CE9B3D007461D0 /* MaskDemoVC.swift */; };
+		F47FDFFB20CEDCDA007461D0 /* MaskSimpleDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FDFFA20CEDCDA007461D0 /* MaskSimpleDemoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F47FDF8A20CE7312007461D0 /* ShapLayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShapLayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47FDF8D20CE7313007461D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F47FDF8F20CE7313007461D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F47FDF8F20CE7313007461D0 /* SimpleDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDemoVC.swift; sourceTree = "<group>"; };
 		F47FDF9220CE7313007461D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F47FDF9420CE7313007461D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F47FDF9720CE7313007461D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F47FDF9920CE7313007461D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47FDFE520CE775E007461D0 /* ToolsProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ToolsProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47FDFF620CE9793007461D0 /* Extension + UIBezierPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension + UIBezierPath.swift"; sourceTree = "<group>"; };
+		F47FDFF820CE9B3D007461D0 /* MaskDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskDemoVC.swift; sourceTree = "<group>"; };
+		F47FDFFA20CEDCDA007461D0 /* MaskSimpleDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskSimpleDemoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +47,7 @@
 			children = (
 				F47FDF8C20CE7312007461D0 /* ShapLayerDemo */,
 				F47FDF8B20CE7312007461D0 /* Products */,
+				F47FDFE420CE775E007461D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +63,32 @@
 			isa = PBXGroup;
 			children = (
 				F47FDF8D20CE7313007461D0 /* AppDelegate.swift */,
-				F47FDF8F20CE7313007461D0 /* ViewController.swift */,
+				F47FDF8F20CE7313007461D0 /* SimpleDemoVC.swift */,
+				F47FDFFA20CEDCDA007461D0 /* MaskSimpleDemoVC.swift */,
+				F47FDFF820CE9B3D007461D0 /* MaskDemoVC.swift */,
 				F47FDF9120CE7313007461D0 /* Main.storyboard */,
 				F47FDF9420CE7313007461D0 /* Assets.xcassets */,
 				F47FDF9620CE7313007461D0 /* LaunchScreen.storyboard */,
 				F47FDF9920CE7313007461D0 /* Info.plist */,
+				F47FDFF020CE7BC9007461D0 /* Extension */,
 			);
 			path = ShapLayerDemo;
+			sourceTree = "<group>";
+		};
+		F47FDFE420CE775E007461D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F47FDFE520CE775E007461D0 /* ToolsProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F47FDFF020CE7BC9007461D0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F47FDFF620CE9793007461D0 /* Extension + UIBezierPath.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F47FDF9020CE7313007461D0 /* ViewController.swift in Sources */,
+				F47FDFF720CE9793007461D0 /* Extension + UIBezierPath.swift in Sources */,
+				F47FDFF920CE9B3D007461D0 /* MaskDemoVC.swift in Sources */,
+				F47FDFFB20CEDCDA007461D0 /* MaskSimpleDemoVC.swift in Sources */,
+				F47FDF9020CE7313007461D0 /* SimpleDemoVC.swift in Sources */,
 				F47FDF8E20CE7313007461D0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Y4TPNE48W;
 				INFOPLIST_FILE = ShapLayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +332,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Y4TPNE48W;
 				INFOPLIST_FILE = ShapLayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
